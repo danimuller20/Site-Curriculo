@@ -1,0 +1,200 @@
+header {
+	width: 100%;
+	height: 300px;
+	border: 5px solid #344;
+	background-image: url(../img/eu.jpg), url(../img/math-hero.jpg);
+	background-size: 300px, 6000px;
+	background-position: top left, top left;
+	background-repeat: no-repeat;
+	}
+
+ul.menu {
+	list-style-type: none;
+	margin: 0px;
+	padding: 5px;
+	overflow: hidden;
+	background-color: #344;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	}
+
+li {
+ float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 3px 50px;
+  text-decoration: none;
+ }
+
+li a:hover {
+  background-color: #009258;
+}
+
+li a.active {background-color: #009258;}
+
+ul.menu li.right {float: right;}
+
+@media screen and (max-width: 600px) {	
+  ul.menu li.right, 
+  ul.menu li {float: none;}
+}
+
+body{
+	font-size: 100%;
+	background-color: rgb(243,255,253);
+}
+
+div {
+	font-family: Arial;
+	font-size: 1em;
+	text-align: justify;
+	text-indent: 50px;
+	letter-spacing: 3px;
+	line-height: 30px;
+	word-spacing: 10px
+	height: 50%;
+	width: 100%;
+	padding: 5px;
+	margin: 1px 10px;
+}
+
+.direita{
+	text-align: center;
+	font-size: 10px;
+	word-spacing: 10px;
+	height: 100%;
+	width: 100%;
+	padding: 10px;
+	margin: 2px;
+	clear: right;
+}
+h2.textoDireita{
+	font-family: Arial;
+	font-size: 1.5em;
+	text-align: center;
+	padding: 10px;
+	margin: 1px;
+	clear: right;
+}
+
+h2.referencias{
+	font-family: Aria;
+	font-size: 2em;
+	line-height: 50px;
+	height: 50%;
+	width: 100%;
+	padding: 5px;
+	margin: 2px;
+	clear: left;
+}
+.enviado{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 3em;
+	text-align: 50px;
+	text-indent: 50px;
+	letter-spacing: 3px;
+	line-height: 30px;
+	word-spacing: 10px;
+}
+
+#contato{
+	font-family: Arial;
+	font-style: normal;
+	font-size: 0.800em;
+	text-align: 50px;
+	letter-spacing: 3px;
+	line-height: 30px;
+	word-spacing: 10px;
+	text-align: center;
+}
+
+.contato2{
+	font-family: "Arial";
+	text-align: center;
+}
+
+#copyrigth{
+	line-height: 5px;
+	letter-spacing: 3px;
+	line-height: 30px;
+	word-spacing: 10px
+	padding: 1px;
+	margin: 1px 2px;
+
+}
+
+.rodape{
+	height: 100%;
+	width: 100%;
+	padding: 5px;
+	margin: 5px;
+	background-color: #009258;
+}
+
+form {
+	/* Apenas para centralizar o form na página */
+	margin: auto;
+	width: 400px;
+	/* Para ver as bordas do formulário */
+	padding: 1em;
+	border: 2px solid #CCC;
+	border-radius: 1em;
+}
+
+.textoContato{
+	font-family: "Arial";
+	text-align: left;
+	text-indent: 0px
+}
+
+
+label {
+	/*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+	display: inline-block;
+	width: 90px;
+	text-align: left;
+}
+
+input, textarea {
+	/* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+	font: 1.5em sans-serif;
+
+	/* Para dar o mesmo tamanho a todos os campo de texto */
+	width: 300px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	/* Para harmonizar o look & feel das bordas nos campos de texto*/
+	border: 1px solid #999;
+	}
+
+input:focus, textarea:focus {
+	/* Dar um pouco de destaque nos elementos ativos */
+	border-color: #000;
+}
+
+textarea {
+	/* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+	vertical-align: top;
+
+	/* Para dar espaço suficiente para digitar algum texto */
+	height: 5em;
+
+	/* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+	resize: vertical;
+}
+
+.button {
+	/* Para posicionar os botões para a mesma posição dos campos de texto */
+	padding-left: 90px; /* mesmo tamanho que os elementos do tipo label */
+}
+button {
+	/* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
+	margin-left: .5em;
+}
